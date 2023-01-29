@@ -61,5 +61,5 @@ final_data['altitude'] = final_data['Altitude']
 
 final_data_zuji = pd.DataFrame(final_data, columns=['dataTime', 'locType', 'longitude', 'latitude', 'heading', 'accuracy', 'speed', 'distance', 'isBackForeground', 'stepType', 'altitude'])
 final_data_zuji.head()
-final_data_zuji.to_csv(r'ZenlyBackUpData.csv')
+final_data_zuji.to_csv(r'ZenlyBackUpData.csv', index=None)
 print("一生足迹App数据转化完成，现在可以导入了！")
